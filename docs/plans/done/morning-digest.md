@@ -1,6 +1,6 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
 ---
@@ -77,3 +77,18 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+- [#1 Run log reader and shared contract](https://github.com/przemos/megadev-s01e04/issues/1)
+- [#2 Digest JSON endpoint](https://github.com/przemos/megadev-s01e04/issues/2)
+- [#3 Digest HTML page](https://github.com/przemos/megadev-s01e04/issues/3)
+- [#4 Status board digest links](https://github.com/przemos/megadev-s01e04/issues/4)
+- [#5 Digest route tests](https://github.com/przemos/megadev-s01e04/issues/5)
+- [#6 Publish review preview](https://github.com/przemos/megadev-s01e04/issues/6)
+- [#7 Remove marker and archive plan](https://github.com/przemos/megadev-s01e04/issues/7)
+
+Reviewed on 2026-11-02. The public preview at
+<https://megadev-s01e04.pages.dev/> was regenerated with `LANE_MARKER` unset
+after review and human approval. Its banner reads "no marker set"; the obsolete
+marker-bearing hosted deployment was deleted. Preview HTML and `.env` stay out of git.
