@@ -14,3 +14,7 @@ three or more and any failure are marked, including jobs that later recovered. M
 return 404; empty nights say "nothing ran". Pages are self-contained HTML with no client scripts.
 
 Working on it with an agent: start at [AGENTS.md](AGENTS.md).
+
+The status board at `/` lists nights in `runs/` newest first, linking each to
+`/digest/:night`. Counts beside each link are valid **events** (ok / retry / fail), not
+jobs' final statuses; malformed lines do not contribute to them.
