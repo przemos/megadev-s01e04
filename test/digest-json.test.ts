@@ -3,7 +3,10 @@ import { createApp } from '../src/app.js';
 import { readNight } from '../src/digest/reader.js';
 import type { DigestNight, ReadNight } from '../src/digest/types.js';
 
-vi.mock('../src/digest/reader.js', () => ({ readNight: vi.fn<ReadNight>() }));
+vi.mock('../src/digest/reader.js', async (importOriginal) => ({
+  ...await importOriginal<typeof import('../src/digest/reader.js')>(),
+  readNight: vi.fn<ReadNight>(),
+}));
 
 const config = {
   adapter: 'shim',

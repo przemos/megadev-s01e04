@@ -20,7 +20,7 @@ function event(
 }
 
 function text(html: string) {
-  return html.replace(/<[^>]*>/g, '').replace(/&mdash;|&#8212;|&#x2014;/gi, '—')
+  return html.replace(/<[^>]*>/g, ' ').replace(/&mdash;|&#8212;|&#x2014;/gi, '—')
     .replace(/&nbsp;|&#160;/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
